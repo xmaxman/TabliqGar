@@ -1,5 +1,5 @@
 tabchi = dofile('./bot/funcation.lua')
-tabchi_id = 343317686
+tabchi_id = 336963035
 ---------------------------------
 
 json = dofile('./libs/JSON.lua')
@@ -13,13 +13,13 @@ http = require "socket.http"
 https = require "ssl.https"
 -----~~~~~~~~~~~~~~~~
 d = dofile('./libs/redis.lua')
-config_sudo = {280061509,310217440,363936960,366831302,56693692,260604473}
+config_sudo = {315017219,306738563,317576202}
 function dl_cb(arg, data)
  --vardump(data)
  --vardump(arg)
 end
 function is_sudo(msg)
-  local var = false
+  local var = falsez
   for v,user in pairs(config_sudo) do
     if user == msg.sender_user_id_ then
       var = true
