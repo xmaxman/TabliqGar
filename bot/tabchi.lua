@@ -205,7 +205,7 @@ local com = d:scard("tcom") or 0
 local block = d:scard("tblock") or 0
 local allmsg = d:get("tallmsg") or 0
 local link = d:scard('links') or 0 
-local text = '> Stats For Tabchi Bot : \n\n> `All Msg :` *'..allmsg..'*\n\n`> SuperGroup  :`* '..gps..'*\n\n`> Group  :` *'..gp..'*`\n\n> Users : `*'..user..'*\n\n`> Contact  :` *'..com..'*`\n\n> Total Links :` *'..link..'*`\n\n> Blocked :` *'..block..'*\n\n> `Create By` *CerNer Team*'
+local text = '💠> Stats For Tabchi Bot : \n\n>☄ `All Msg :` *'..allmsg..'*\n\n`>☄ SuperGroup  :`* '..gps..'*\n\n`>☄ Group  :` *'..gp..'*`\n\n>☄ Users : `*'..user..'*\n\n`>☄ Contact  :` *'..com..'*`\n\n>☄ Total Links :` *'..link..'*`\n\n>☄ Blocked :` *'..block..'*\n\n>💠 `Create By` *CS Team*'
  tabchi.sendText(msg.chat_id_, msg.id_,1,text,1,'md')
  end
  if text == 'settings' and is_sudo(msg) then
@@ -372,7 +372,7 @@ if text and text:match('^setpm (.*)') and is_sudo(msg) then
 if text == 'reload' and is_sudo(msg) then
  dofile('./bot/funcation.lua')
  dofile('./bot/tabchi.lua')
-tabchi.sendText(msg.chat_id_,msg.id_,1,'*Tabchi BOT Reloaded*',1,'md')
+tabchi.sendText(msg.chat_id_,msg.id_,1,'☄*Tabchi BOT Reloaded*',1,'md')
 end
 if text and text:match('^leave(-100)(%d+)$') then
 local leave = text:match('leave(-100)(%d+)$') 
