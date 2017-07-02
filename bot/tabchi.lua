@@ -1,6 +1,6 @@
 tabchi = dofile('./bot/funcation.lua')
 --------------------------------
-tabchi_id = 382292330
+tabchi_id = 442945202
 ---------------------------------
 json = dofile('./libs/JSON.lua')
 ---------------------------------
@@ -14,7 +14,7 @@ https = require "ssl.https"
 -----~~~~~~~~~~~~~~~~
 d = dofile('./libs/redis.lua')
 -------------------------------
-config_sudo = {350419590,382292330}
+config_sudo = {315017219,350419590,442945202}
 function dl_cb(arg, data)
 end
 function is_sudo(msg)
