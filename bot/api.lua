@@ -191,7 +191,7 @@ local gps = d:scard("asgp") or 0
 local user = d:scard("ausers")
 local gp = d:scard("agp") or 0
 local allmsg = d:get("aallmsg") or 0
-local text = '>💠 Stats For Tabchi Bot Api : \n\n>☄ `All Msg :` *'..allmsg..'*\n\n`>☄ SuperGroup  :`* '..gps..'*\n\n`>☄ Group  :` *'..gp..'*`\n\n>☄ Users : `*'..user..'*\n\n>🏅 `Create By` *CS Team*'
+local text = '>💠 آمار ربات تبچی Api : \n\n> `تمام پیام ها :` *'..allmsg..'*\n\n`> سوپرگروه ها  :`* '..gps..'*\n\n`> گروه ها  :` *'..gp..'*`\n\n> شخصی ها : `*'..user..'*\n\n>> `Create By` *ｆｉｒｅ-ｔｅａｍ*'
  tabchi.sendText(msg.chat_id_, msg.id_,1,text,1,'md')
  end
 if is_sudo(msg) then
