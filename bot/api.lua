@@ -140,14 +140,14 @@ local cerner = 'CerNer Team'
 end
           tdcli_function({
       ID = "GetInlineQueryResults",
-      bot_user_id_ = 390586489,
+      bot_user_id_ = 442945202,
       chat_id_ = msg.chat_id_,
       user_location_ = {
         ID = "Location",
         latitude_ = 0,
         longitude_ = 0
       },
-      query_ = 'CerNer Team',
+      query_ = 'Fire Team',
       offset_ = 0
     }, inline, nil)
        end--]]
