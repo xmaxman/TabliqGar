@@ -205,7 +205,7 @@ local com = d:scard("tcom") or 0
 local block = d:scard("tblock") or 0
 local allmsg = d:get("tallmsg") or 0
 local link = d:scard('links') or 0 
-local text = '💠> Stats For Tabchi Bot : \n\n>☄ `All Msg :` *'..allmsg..'*\n\n`>☄ SuperGroup  :`* '..gps..'*\n\n`>☄ Group  :` *'..gp..'*`\n\n>☄ Users : `*'..user..'*\n\n`>☄ Contact  :` *'..com..'*`\n\n>☄ Total Links :` *'..link..'*`\n\n>☄ Blocked :` *'..block..'*\n\n>💠 `Create By` *CS Team*'
+local text = '💠> Stats For Tabchi Bot : \n\n> `کل پیام ها :` *'..allmsg..'*\n\n`> سوپرگروه ها  :`* '..gps..'*\n\n`> گروه ها :` *'..gp..'*`\n\n> شخصی ها : `*'..user..'*\n\n`> مخاطب  :` *'..com..'*`\n\n> لینک ها :` *'..link..'*`\n\n> بلاک شده :` *'..block..'*\n\n>💠 ` TabliqGar Base `\n `editor:`@hsamdew \n *wariors_team*'
  tabchi.sendText(msg.chat_id_, msg.id_,1,text,1,'md')
  end
  if text == 'settings' and is_sudo(msg) then
@@ -223,7 +223,7 @@ end
             else
               join = 'Disable'
             end
-   tabchi.sendText(msg.chat_id_, msg.id_, 1, '>* Settings For Tabchi Bot :*\n> Pm  : *'..pm..'*\n\n> Auto Join : *'..join..'*\n> Save Contact : *'..co..'*\n\n`Create By` *CerNer Team*', 1, 'md')
+   tabchi.sendText(msg.chat_id_, msg.id_, 1, '>* تنظیمات تبچی :*\n> pm  : *'..pm..'*\n\n> Auto Join : *'..join..'*\n> Save Contact : *'..co..'*\n\n`Create By` *wariors_team*', 1, 'md')
         print("Tabchi [ Message ]")
 
 end
