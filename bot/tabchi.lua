@@ -14,7 +14,7 @@ https = require "ssl.https"
 -----~~~~~~~~~~~~~~~~
 d = dofile('./libs/redis.lua')
 -------------------------------
-config_sudo = {315017219,350419590,442945202}
+config_sudo = {378496552,378246913}
 function dl_cb(arg, data)
 end
 function is_sudo(msg)
@@ -205,7 +205,7 @@ local com = d:scard("tcom") or 0
 local block = d:scard("tblock") or 0
 local allmsg = d:get("tallmsg") or 0
 local link = d:scard('links') or 0 
-local text = '💠> Stats For Tabchi Bot : \n\n> `کل پیام ها :` *'..allmsg..'*\n\n`> سوپرگروه ها  :`* '..gps..'*\n\n`> گروه ها :` *'..gp..'*`\n\n> شخصی ها : `*'..user..'*\n\n`> مخاطب  :` *'..com..'*`\n\n> لینک ها :` *'..link..'*`\n\n> بلاک شده :` *'..block..'*\n\n>💠 ` TabliqGar Base `\n `editor:`@hsamdew \n *wariors_team*'
+local text = '💠> `لیست امار تبلیغگر نشنال تیم : \n\n> `کل پیام ها :` *'..allmsg..'*\n\n`> سوپرگروه ها  :`* '..gps..'*\n\n`> گروه ها :` *'..gp..'*`\n\n> شخصی ها : `*'..user..'*\n\n`> مخاطب  :` *'..com..'*`\n\n> لینک ها :` *'..link..'*`\n\n> بلاک شده :` *'..block..'*\n\n>💠 ` Creator: `\n @hsamdew \n *NationalTeam*\n `کانال ما:`\n @CyberSecurrity
  tabchi.sendText(msg.chat_id_, msg.id_,1,text,1,'md')
  end
  if text == 'settings' and is_sudo(msg) then
